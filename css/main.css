@@ -1,0 +1,115 @@
+/* reset css - 2021 */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+html{
+    font-size: 62.5%;
+    background: #000 url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg) fixed no-repeat center;
+}
+body{
+    font: 1.6rem 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p,figure,ul,ol,hr{
+    margin: 0;
+    padding: 0;
+    
+}
+h1,h2,h3{
+    font-weight: 100;
+}
+button{
+    padding: 0;
+    border: 0;
+}
+*{
+    box-sizing: border-box;
+}
+ /*theme*/
+
+ header h1, main h2{
+     line-height: 6rem;
+     background-color: #222;
+     color: #fff;
+     text-align: center;
+
+ }
+ main h2{
+     margin-top: 21rem;
+     line-height: 4.5rem;
+
+ }
+ main{
+    
+     max-width: 40rem;
+     margin: 2rem auto;
+ }
+ div img{
+     display: block;
+     max-width: 100%;
+ }
+ .section{ 
+    
+     position: relative;
+     overflow: hidden;
+     height: 37rem;
+ }
+
+ .section .slide_show{
+     position: absolute;
+     top: 0;
+     left: 0;
+      width: 100%;
+     animation: slideIn 8s linear infinite;
+ }
+ /*.section .slide_show:hover{
+     animation: paused;
+     filter: grayscale(100%);
+     cursor: pointer;
+
+
+ }*/
+.section .slide_stop{
+    animation: paused;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+h2 .material-icons{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    vertical-align: -.4rem;
+    display: inline-block;
+
+}
+ .slide_1{
+     top: 0;
+ }
+ .slide_2{
+     top:-40rem;
+     }
+.slide_3{
+    top: -80rem;
+}
+
+@keyframes slideIn {
+    0%{
+        top: 0;
+    }
+   22%{
+       top: 0;
+   } 
+   33%{
+       top: -40rem;
+   }
+   44%{
+       top: -40rem;
+   }
+   66%{
+       top: -80rem;
+   }
+   88%{
+       top: -80rem;
+   }
+}
+
